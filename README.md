@@ -1,19 +1,18 @@
-# Readme
-- **感谢**
+# Thanks
 * HandsomeMod
 * dreirund/Handsomemod-uf896
 * ALbur/HanFI
 
 # HandsomeMod-uf896-ci
-- **缝合兼容性**
-* 同样适用于 uf629 v1.1 
-* 短接【1，6】测试点进入9008模式
+- **兼容性**
+  1. 同样适用于 uf629 v1.1 
+  2. 短接【1，6】测试点进入9008模式
 
 - **Modem**
-1. 提取基带: modemst1、modemst1、fsc、fsg 四个分区,并替换
-2. 可以用miko备份的文件包xxx.bin文件里面的 0.modem.fat （可以用7z压缩工具打开提取）
-3. 在提取 0.modem.fat （可以用7z压缩工具打开提取）到一个文件夹
-4. 把image下面的所有文件复制到 /lib/firmware/，reboot重启棒子
+  1. 提取基带: modemst1、modemst1、fsc、fsg 四个分区,并替换
+  2. 可以用miko备份的文件包xxx.bin文件里面的 0.modem.fat （可以用7z压缩工具打开提取）
+  3. 在提取 0.modem.fat （可以用7z压缩工具打开提取）到一个文件夹
+  4. 把image下面的所有文件复制到 /lib/firmware/，reboot重启棒子
 
 # HanFI
 * 稳妥起见 刷机前请备份自己的基带4分区及firmware
@@ -24,11 +23,11 @@
 * 刷入前请自行删除旧版本boot.img及rootfs.img(tool.7z下为system.img)
 * firmware 见 [openstick](https://github.com/OpenStick/OpenStick/releases)
 * 问题 
-1. mac80211驱动有问题，要编译老网卡需要换，自己添加wcn36xx驱动进去 还望大佬们指导编译方案 也不清楚是否可行
-2. kmod-usb-gadget-eth 编译不进去 使用扩展坞的 若有网卡 或许需要本地编译 或者请指导一下云编译怎么修复
+  1. mac80211驱动有问题，要编译老网卡需要换，自己添加wcn36xx驱动进去 还望大佬们指导编译方案 也不清楚是否可行
+  2. kmod-usb-gadget-eth 编译不进去 使用扩展坞的 若有网卡 或许需要本地编译 或者请指导一下云编译怎么修复
 * 其他
-1. 打开主机模式，连接拓展坞 echo host > /sys/kernel/debug/usb/ci_hdrc.0/role
-2. 打开网络共享，关闭主机模式 echo gadget > /sys/kernel/debug/usb/ci_hdrc.0/role
+  1. 打开主机模式，连接拓展坞 echo host > /sys/kernel/debug/usb/ci_hdrc.0/role
+  2. 打开网络共享，关闭主机模式 echo gadget > /sys/kernel/debug/usb/ci_hdrc.0/role
 
 # HandsomeMod router operating system for "OpenStick" UF896.
 
