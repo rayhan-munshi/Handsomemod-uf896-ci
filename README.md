@@ -1,12 +1,22 @@
-# Thanks
-* HandsomeMod
-* dreirund/Handsomemod-uf896
-* ALbur/HanFI
+# 鸣谢 Thanks
+* [HandsomeMod](https://github.com/HandsomeMod/HandsomeMod)
+* [dreirund/Handsomemod-uf896](https://github.com/dreirund/Handsomemod-uf896)
+* [kirdesde/Handsomemod](https://github.com/kirdesde/Handsomemod/)
+* [ALbur/HanFI](https://github.com/ALbur/HanFI)
 
-# HandsomeMod-uf896-ci
+# 本项目 HandsomeMod-uf896-ci
+- **用法**
+  1. Action构建出boot和system（rootfs）
+  2. 替换别的棒子底包的boot.img和rootfs.img
+  3. 恢复基带，修复Modem
+
 - **兼容性**
-  1. 同样适用于 uf629 v1.1 
+  1. uf896的构建制品同样适用于 uf629 v1.1
   2. 短接【1，6】测试点进入9008模式
+
+- **参考信息**
+  1.  [openstick#edl-recovery-mode](https://github.com/colemickens/mobile-nixos/tree/openstick/devices/openstick#edl-recovery-mode)
+  2.  [UF896](https://forum.openwrt.org/t/uf896-qualcomm-msm8916-lte-router-384mib-ram-2-4gib-flash-android-openwrt/131712/59)
 
 - **Modem**
   1. 提取基带: modemst1、modemst1、fsc、fsg 四个分区,并替换
@@ -14,7 +24,7 @@
   3. 在提取 0.modem.fat （可以用7z压缩工具打开提取）到一个文件夹
   4. 把image下面的所有文件复制到 /lib/firmware/，reboot重启棒子
 
-# HanFI
+# 援引 HanFI
 * 稳妥起见 刷机前请备份自己的基带4分区及firmware
 * 也许你需要自行替换firmware及基带 详见 [大佬文章](https://www.coolapk.com/feed/38895153) 已验证
 * tools都不带系统镜像 其中tool.7z已验证 其余需要自行验证 ps:其实刷了大佬们的op后 替换自己编译的 root和boot就行 用高通工具9008更快
@@ -29,7 +39,7 @@
   1. 打开主机模式，连接拓展坞 echo host > /sys/kernel/debug/usb/ci_hdrc.0/role
   2. 打开网络共享，关闭主机模式 echo gadget > /sys/kernel/debug/usb/ci_hdrc.0/role
 
-# HandsomeMod router operating system for "OpenStick" UF896.
+# 援引 Handsomemod-uf896
 
 This repository is a fork of the ["`uf896`"-branch](https://github.com/kirdesde/Handsomemod/tree/uf896) of "[kirdesde/Handsomemod](https://github.com/kirdesde/Handsomemod/)", which itself is based on "[HandsomeMod/HandsomeMod](https://github.com/HandsomeMod/HandsomeMod/)".
 
