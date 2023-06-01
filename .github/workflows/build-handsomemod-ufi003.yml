@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Build HandsomeMod
+name: Build HandsomeMod-ufi003
 
 on:
   repository_dispatch:
@@ -20,10 +20,10 @@ on:
         default: 'false'
 
 env:
-  REPO_URL: https://github.com/dreirund/Handsomemod-uf896
-  REPO_BRANCH: uf896
+  REPO_URL: https://github.com/HandsomeMod/HandsomeMod
+  REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: uf896.config
+  CONFIG_FILE: ufi003.config
   DIY_P1_SH: diy-part1.sh
   DIY_P2_SH: diy-part2.sh
   UPLOAD_BIN_DIR: false
