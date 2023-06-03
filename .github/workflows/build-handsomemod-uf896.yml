@@ -20,7 +20,7 @@ on:
         default: 'false'
 
 env:
-  REPO_URL: https://github.com/dreirund/Handsomemod-uf896
+  REPO_URL: https://github.com/kirdesde/Handsomemod
   REPO_BRANCH: uf896
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: uf896.config
