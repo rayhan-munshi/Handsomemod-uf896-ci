@@ -10,6 +10,9 @@
   2. 替换别的棒子底包的boot.img和rootfs.img
   3. 恢复基带，修复Modem
 
+- **问题**
+  1. sim卡切换不正确，默认只能使用板载esim，不能切外置sim，即便去掉esim
+
 - **兼容性**
   1. uf896的构建制品同样适用于 uf629 v1.1
   2. 短接【1，6】测试点进入9008模式
@@ -18,7 +21,7 @@
   1.  [openstick#edl-recovery-mode](https://github.com/colemickens/mobile-nixos/tree/openstick/devices/openstick#edl-recovery-mode)
   2.  [UF896](https://forum.openwrt.org/t/uf896-qualcomm-msm8916-lte-router-384mib-ram-2-4gib-flash-android-openwrt/131712/59)
 
-- **Modem**
+- **基带**
   1. 提取基带: modemst1、modemst1、fsc、fsg 四个分区,并替换
   2. 可以用miko备份的文件包xxx.bin文件里面的 0.modem.fat （可以用7z压缩工具打开提取）
   3. 在提取 0.modem.fat （可以用7z压缩工具打开提取）到一个文件夹
